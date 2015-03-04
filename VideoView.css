@@ -1,0 +1,59 @@
+.video-view { position:relative; z-index:1; margin:0 13px 18px; }
+.pad .video-view { margin-left:-2px; margin-right:-2px; }
+
+.video-view a { display:block; position:relative; z-index:2; padding:7px 7px 15px; background:#fff;
+	-webkit-box-shadow:0 0 3px rgba(0, 0, 0, 0.4); box-shadow:0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.video-view .thumbnail i { display:block; }
+.video-view .thumbnail .description:not(:empty),
+.video-view .thumbnail div:not(:empty) { margin-top:14px; }
+.video-view .thumbnail i img { border:0; }
+
+.video-view .thumbnail i::before { z-index:5; margin:0; background:url(assets/APVideoThumbnailView/icon_playbutton_160x160_m_en_us.png) 50% 50% no-repeat;
+	-webkit-background-size:80px; background-size:80px; -webkit-box-shadow:none; box-shadow:none;
+}
+
+
+.video-view a > :not(i) { margin-right:8px; margin-left:8px; }
+.video-view h1,
+.video-view h2 { margin-bottom:0; padding:0; font-size:14px; line-height:1.2; }
+.video-view h2 { font-weight:normal; color:#999; }
+.video-view h1 { margin-bottom:2px; color:#000; }
+.video-view h4,
+.video-view p { margin-bottom:0; font-size:12px; line-height:1.2; color:#808080; }
+.video-view h4 + p { margin-top:1px; }
+.video-view h2 + p { margin-top:10px; }
+.video-view h4 { margin-top:10px; }
+
+.video-view span.shadow { bottom:-4px; margin:5px 9px; -webkit-box-shadow:0 5px 3px 1px rgba(0,0,0,0.40); box-shadow:0 5px 3px 1px rgba(0,0,0,0.40); }
+
+.video-view span.shadow::after { bottom:-10px; height:8px; background:#fff; opacity:1;
+	-webkit-border-radius:300px 300px 0 0 / 16px 16px 0 0; border-radius:300px 300px 0 0 / 16px 16px 0 0;
+	-webkit-box-shadow:0 -2px 2px rgba(255,255,255,0.9); box-shadow:0 -2px 2px rgba(255,255,255,0.9);
+}
+.video-view span.shadow span { top:-3px; width:8px; -webkit-border-radius:5px; border-radius:5px; }
+.video-view span.shadow span:first-child { left:-7px; -webkit-transform:rotate(-3deg); transform:rotate(-3deg);
+	-webkit-box-shadow:-5px 0 4px -1px rgba(0,0,0,0.4); box-shadow:-5px 0 4px -1px rgba(0,0,0,0.4);
+}
+.video-view span.shadow span:last-child { right:-7px; -webkit-transform:rotate(3deg); transform:rotate(3deg);
+	-webkit-box-shadow:5px 0 4px -1px rgba(0,0,0,0.4); box-shadow:5px 0 4px -1px rgba(0,0,0,0.4);
+}
+
+
+/**
+ * .shadowcanvas deprecated in favor of .shadow
+ */
+.video-view span.shadowcanvas { bottom:-4px; margin:5px 9px; -webkit-box-shadow:0 5px 3px 1px rgba(0,0,0,0.40); box-shadow:0 5px 3px 1px rgba(0,0,0,0.40); }
+
+.video-view span.shadowcanvas::after { bottom:-10px; height:8px; background:#fff; opacity:1;
+	-webkit-border-radius:300px 300px 0 0 / 16px 16px 0 0; border-radius:300px 300px 0 0 / 16px 16px 0 0;
+	-webkit-box-shadow:0 -2px 2px rgba(255,255,255,0.9); box-shadow:0 -2px 2px rgba(255,255,255,0.9);
+}
+.video-view span.shadowcanvas span { top:-3px; width:8px; -webkit-border-radius:5px; border-radius:5px; }
+.video-view span.shadowcanvas span:first-child { left:-7px; -webkit-transform:rotate(-3deg); transform:rotate(-3deg);
+	-webkit-box-shadow:-5px 0 4px -1px rgba(0,0,0,0.4); box-shadow:-5px 0 4px -1px rgba(0,0,0,0.4);
+}
+.video-view span.shadowcanvas span:last-child { right:-7px; -webkit-transform:rotate(3deg); transform:rotate(3deg);
+	-webkit-box-shadow:5px 0 4px -1px rgba(0,0,0,0.4); box-shadow:5px 0 4px -1px rgba(0,0,0,0.4);
+}

@@ -1,0 +1,101 @@
+.hero { position:relative; z-index:1; }
+.hero .content { background:#fff; background-repeat:repeat; position:relative; z-index:2; }
+.hero.dark .content { background:#000; }
+
+.hero.static a { display:block; }
+.hero.static img { display:block; margin:-7px; -webkit-margin-collapse:separate; margin-collapse:separate; }
+.hero.static > span.shadowcanvas::after { bottom:-13px; height:8px; }
+
+.hero.interactive { margin:10px 7px;
+	-webkit-border-radius:5px; border-radius:5px;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.25); box-shadow:0 1px 1px rgba(0,0,0,0.25);
+}
+.hero.interactive .content { margin:0; }
+.hero.interactive .gallery .scroller { overflow:hidden; }
+.hero.interactive .gallery .scroller figure { float:left; padding:0; }
+.hero.interactive .gallery .scroller figure > img { display:block; margin:0 auto; }
+
+.hero.interactive .gallery figure:not(:first-child) { height:0; overflow:hidden; }
+.hero.interactive .gallery .scrollable figure { height:auto; }
+
+.hero.interactive .corner { display:block; position:absolute; z-index:3; width:5px; height:5px; background:url(assets/APHeroView/gallery_mask_m_en_us.png) 0 0 no-repeat; -webkit-background-size:10px; background-size:10px; }
+.hero.interactive .top-left { top:0; left:0; }
+.hero.interactive .top-right { top:0; right:0; background-position:-5px 0; }
+.hero.interactive .bottom-left { bottom:0; left:0; background-position:0 -5px; }
+.hero.interactive .bottom-right { right:0; bottom:0; background-position:-5px -5px; }
+
+.hero.interactive .gallery .simple-nav { position:absolute; bottom:1px; z-index:1; width:100%; }
+
+.hero.interactive.dark .simple-nav span { background-color:#666; }
+.hero.interactive.dark .simple-nav span.active { background:#fff; -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.5); box-shadow:inset 0 1px 1px rgba(0,0,0,0.5); }
+
+.hero.interactive span.shadowcanvas{ margin:7px 10px; -webkit-box-shadow:0 5px 3px 0 rgba(0,0,0,0.25); box-shadow:0 5px 3px 0 rgba(0,0,0,0.25); }
+.hero.interactive span.shadowcanvas span:first-child { top:2px; left:-5px; }
+.hero.interactive span.shadowcanvas span:last-child { top:2px; right:-5px; }
+
+
+.hero { position:relative; z-index:1; }
+.hero .content { background:#fff; background-repeat:repeat; position:relative; z-index:2; }
+.hero.dark .content { background:#000; }
+
+.hero .content > a { display:block; }
+.hero .content > a img { display:block; margin:-7px; -webkit-margin-collapse:separate; margin-collapse:separate; }
+.hero > span.shadow::after { bottom:-13px; height:8px; }
+
+.hero.interactive { margin:10px 7px;
+	-webkit-border-radius:5px; border-radius:5px;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.25); box-shadow:0 1px 1px rgba(0,0,0,0.25);
+}
+.hero.interactive .content { margin:0; }
+.hero.interactive .gallery .scroller { overflow:hidden; }
+.hero.interactive .gallery .scroller figure { float:left; padding:0; }
+.hero.interactive .gallery .scroller figure > img { display:block; margin:0 auto; }
+
+.hero.interactive .gallery figure:not(:first-child) { height:0; overflow:hidden; }
+.hero.interactive .gallery .scrollable figure { height:auto; }
+
+.hero.interactive .corner { display:block; position:absolute; z-index:3; width:5px; height:5px; background:url(assets/APHeroView/gallery_mask_m_en_us.png) 0 0 no-repeat; -webkit-background-size:10px; background-size:10px; }
+.hero.interactive .top-left { top:0; left:0; }
+.hero.interactive .top-right { top:0; right:0; background-position:-5px 0; }
+.hero.interactive .bottom-left { bottom:0; left:0; background-position:0 -5px; }
+.hero.interactive .bottom-right { right:0; bottom:0; background-position:-5px -5px; }
+
+.hero.interactive .gallery .simple-nav { position:absolute; bottom:1px; z-index:1; width:100%; }
+.hero.interactive .gallery .video-collection + .simple-nav { bottom:56px; }
+
+.hero.interactive.dark .simple-nav span { background-color:#666; }
+.hero.interactive.dark .simple-nav span.active { background:#fff; -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.5); box-shadow:inset 0 1px 1px rgba(0,0,0,0.5); }
+
+.hero.interactive span.shadow { margin:7px 10px; -webkit-box-shadow:0 5px 3px 0 rgba(0,0,0,0.25); box-shadow:0 5px 3px 0 rgba(0,0,0,0.25); }
+.hero.interactive span.shadow span:first-child { top:2px; left:-5px; }
+.hero.interactive span.shadow span:last-child { top:2px; right:-5px; }
+
+
+.hero.integrated .content > a,
+.hero.integrated.interactive .gallery .simple-nav { -webkit-box-shadow:inset 0 -2px 1px -2px rgba(0,0,0,0.6); box-shadow:inset 0 -2px 1px -2px rgba(0,0,0,0.6); }
+.hero.integrated .content > a img { margin-bottom:0; }
+
+.hero .video-collection { margin:0; padding:7px 23px 8px; background:rgba(0,0,0,0.1); -webkit-box-shadow:inset 0 1px 1px -1px #fff; box-shadow:inset 0 1px 1px -1px #fff; }
+.hero .video-collection a { position:static; text-align:left; -webkit-box-orient:horizontal; box-orient:horizontal; -webkit-box-align:center; box-align:center; }
+
+.hero .video-collection a:first-child:nth-last-child(1) { padding:0 59px; }
+.hero .video-collection a:first-child:nth-last-child(1) h5 { display:-webkit-box; display:box; margin:0; }
+
+.hero .video-collection a:nth-child(2) { padding-left: 5px; }
+.hero .video-collection a:first-child:nth-last-child(2) { padding-right:5px; }
+.hero .video-collection a:first-child:nth-last-child(2),
+.hero .video-collection a:first-child:nth-last-child(2) ~ a { border:0; }
+
+.hero .video-collection .thumbnail i.curve-up { display:block; margin: 0 7px 0 0; }
+.hero .video-collection .thumbnail i.curve-up img { border-width:3px; }
+.hero .video-collection .thumbnail i.curve-up::before { margin:3px; }
+
+
+.hero .video-collection a h5 { display:-webkit-box; display:box; position:static; overflow:hidden; width:auto; text-align:left; text-shadow:none; -webkit-box-flex:1; box-flex:1; -webkit-box-orient:vertical; box-orient:vertical; -webkit-line-clamp:3; line-clamp:3; }
+.hero .video-collection a h5::after { display:inline-block; margin-left:3px; border:3px solid transparent; border-left-color:#000; content:""; }
+
+.hero.dark.integrated .content > a,
+.hero.dark.integrated.interactive .gallery .simple-nav { -webkit-box-shadow:inset 0 -2px 1px -2px #000; }
+.hero.dark .video-collection { background:rgba(255,255,255,0.08); -webkit-box-shadow:inset 0 1px 1px -1px rgba(255,255,255,0.25); box-shadow:inset 0 1px 1px -1px rgba(255,255,255,0.25); }
+.hero.dark .video-collection a h5 { color:#fff; }
+.hero.dark .video-collection a h5::after { border-left-color:#fff; }
